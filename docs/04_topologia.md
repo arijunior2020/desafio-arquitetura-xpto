@@ -102,8 +102,10 @@ flowchart TD
     E --> G
     C --> H[Serviços Legados na Nuvem (IaaS)]
     C --> I[Serviços Legados On-Premises]
-    I <--> J[Infraestrutura Local]
+    I --> J[Infraestrutura Local]
+
     subgraph VPN
-        I <--> D
+        D --> I
     end
+
 ```
