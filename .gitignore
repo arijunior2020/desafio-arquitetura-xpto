@@ -1,0 +1,54 @@
+# ⚙️ Arquivos do sistema e editores
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+
+# 🛠️ IDEs (VSCode, JetBrains, etc.)
+.vscode/
+.idea/
+
+# 🌍 Ambientes Python ou Node (se usar futuramente)
+node_modules/
+.env
+.venv/
+__pycache__/
+
+# 📦 Builds ou exportações temporárias
+*.zip
+*.tar.gz
+*.rar
+
+# 📐 Diagramas exportados
+*.drawio.bak
+*.drawio~*
+*.svg~
+*.png~
+
+# ☁️ Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars
+
+# 🧪 Ansible
+*.retry
+*.pyc
+*.log
+
+# 🧾 Arquivos temporários de Markdown/LaTeX
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+
+# ✅ Arquivos pessoais ou específicos
+infra/outputs.json
+infra/.auto.tfvars.json
+docs/*.pdf
