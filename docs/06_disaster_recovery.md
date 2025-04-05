@@ -70,25 +70,24 @@ Esses valores podem ser refinados conforme maturidade operacional e automações
 
 ---
 
-## 🧭 Fluxo de Recuperação de Desastres (Mermaid)
+## 🔁 Fluxo de Recuperação de Desastres (Mermaid)
 
 ```mermaid
 flowchart TD
-    A[Ambiente Cloud (Primário)] -->|Falha detectada| B{Verificar impacto}
-    B -->|Parcial| C[Redirecionar via API Gateway]
-    B -->|Total| D[Ativar ambiente On-Premises]
-    D --> E[Serviços legados operando localmente]
-    E --> F[Sincronização com último backup]
-    F --> G[Serviços disponíveis até restauração cloud]
+    A["Ambiente Cloud (Primario)"] --> B["Falha detectada - Verificar impacto"]
+    B --> C["Parcial - Redirecionar via API Gateway"]
+    B --> D["Total - Ativar ambiente On-Premises"]
+    D --> E["Servicos legados operando localmente"]
+    D --> F["Sincronizacao com ultimo backup"]
+    F --> G["Servicos disponiveis ate restauracao cloud"]
 
-    subgraph Automação
-        H[Terraform] --> I[Recriação Infraestrutura]
-        J[Ansible] --> K[Reconfiguração de serviços]
+    subgraph Automacao
+        H["Terraform"] --> I["Recriacao Infraestrutura"]
+        J["Ansible"] --> K["Reconfiguracao de servicos"]
     end
 
     G --> H
     G --> J
-```
 
 ---
 
@@ -110,3 +109,4 @@ A estratégia de DR proposta permite à XPTO manter continuidade operacional mes
 - Aproveitamento do ambiente on-premises como parte do plano de resiliência
 
 O plano pode ser aprimorado continuamente com testes regulares, automação de processos e maior integração com ferramentas de segurança e backup.
+```
