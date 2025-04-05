@@ -73,7 +73,6 @@ A arquitetura adota o modelo **híbrido consciente**, no qual:
 ```plaintext
 ├── 📁 diagramas/
 │   ├── arquitetura.png
-│   └── topologia_rede.png
 │
 ├── 📁 docs/
 │   ├── 01_contexto_negocio.md
