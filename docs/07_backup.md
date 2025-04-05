@@ -24,29 +24,29 @@ Este documento descreve a estratégia de backup adotada para a arquitetura híbr
 
 ---
 
-## 🧭 Visão Geral da Estratégia de Backup (Mermaid)
+## 💾 Visao Geral da Estrategia de Backup (Mermaid)
 
 ```mermaid
 flowchart TD
-    A[Serviços Modernos na Nuvem] --> B[Banco de Dados Gerenciado]
-    A --> C[Arquivos de Configuração / Infraestrutura]
-    B --> D[Snapshots Automáticos + PITR]
-    C --> E[Git Versionado + Backup Cifrado]
+    A["Servicos Modernos na Nuvem"] --> B["Banco de Dados Gerenciado"]
+    A --> C["Arquivos de Configuracao / Infraestrutura"]
+    B --> D["Snapshots Automaticos + PITR"]
+    C --> E["Git versionado + Backup Cifrado"]
 
-    F[Serviços Legados On-Premises] --> G[Máquinas Virtuais]
-    G --> H[Snapshots de Disco / Rsync para Blob Storage]
+    F["Servicos Legados On-Premises"] --> G["Maquinas Virtuais"]
+    G --> H["Snapshots de Disco ou Rsync para Blob Storage"]
 
-    subgraph Armazenamento Seguro
+    subgraph ArmazenamentoSeguro
         D
         E
         H
     end
 
-    Armazenamento Seguro --> I[Testes de Restauração Trimestrais]
-    I --> J[Ambiente de Staging para simulações]
+    ArmazenamentoSeguro --> I["Testes de Restauracao Trimestrais"]
+    I --> J["Ambiente de Staging para simulacoes"]
 
-    K[Criptografia em repouso e em trânsito] --> Armazenamento Seguro
-    L[Políticas de Retenção (7-30-180 dias)] --> Armazenamento Seguro
+    K["Criptografia em repouso e em transito"] --> ArmazenamentoSeguro
+    L["Politicas de Retencao (7-30-180 dias)"] --> ArmazenamentoSeguro
 ```
 
 ---
