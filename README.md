@@ -106,8 +106,8 @@ O reuso, redistribuição ou adaptação parcial/total deste material só é per
 
 ## 👨‍💻 Autor e Direitos
 
-Arimatéia Júnior
-Arquiteto de Software e Soluções | Especialista em DevOps e Cloud
-📍 Caucaia, Ceará – Brasil
-📧 arimateiajunior.tic@gmail.com
-🔗 linkedin.com/in/arimateiajunior
+**Arimatéia Júnior**  
+Arquiteto de Software e Soluções | Especialista em DevOps e Cloud  
+📍 Caucaia, Ceará – Brasil  
+📧 arimateiajunior.tic@gmail.com  
+🔗 [linkedin.com/in/arimateiajunior](https://linkedin.com/in/arimateiajunior)
