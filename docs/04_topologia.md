@@ -92,16 +92,17 @@ Essa estratégia torna a arquitetura mais robusta, confiável e preparada para c
 
 ```mermaid
 flowchart TD
-    A[Usuário / Navegador / App] --> B[Load Balancer (HTTPS)]
+    A[Usuario / Navegador / App] --> B[Load Balancer (HTTPS)]
     B --> C[API Gateway]
-    C --> D[Kubernetes - Serviço de Controle]
-    C --> E[Serverless - Consolidação Diária]
+    C --> D[Kubernetes - Servico de Controle]
+    C --> E[Serverless - Consolidacao Diaria]
     D --> F[Banco de Dados Gerenciado]
     E --> F
     D --> G[Cache Redis]
     E --> G
-    C --> H[Serviços Legados na Nuvem (IaaS)]
-    C --> I[Serviços Legados On-Premises]
+    C --> H[Servicos Legados na Nuvem (IaaS)]
+    C --> I[Servicos Legados On-Premises]
     I --> J[Infraestrutura Local]
     D --> I
+
 ```
