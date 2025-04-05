@@ -88,6 +88,7 @@ flowchart TD
 
     G --> H
     G --> J
+```
 
 ---
 
@@ -109,4 +110,7 @@ A estratégia de DR proposta permite à XPTO manter continuidade operacional mes
 - Aproveitamento do ambiente on-premises como parte do plano de resiliência
 
 O plano pode ser aprimorado continuamente com testes regulares, automação de processos e maior integração com ferramentas de segurança e backup.
+
+```
+
 ```
